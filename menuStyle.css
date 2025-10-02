@@ -1,0 +1,156 @@
+body {
+  font-family: 'League Spartan', sans-serif;
+  margin: 0;
+  padding: 0;
+    background: url(images/background.png) repeat;
+  background-size: auto;
+  color: #2e2e2e;
+}
+
+h1, h2, h3 {
+  font-family: 'Lancelot', serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.caption {
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5b4033;
+  color: white;
+  padding: 15px 30px;
+}
+
+header .logo {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+  color: #f2d16b;
+}
+
+main.menuCont {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+h2 {
+  color: #5b4033;
+  border-bottom: 2px solid #d4a373;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.MenuPastries .grid {
+  grid-template-columns: 1fr; 
+}
+
+.product {
+  display: flex;
+  background: #fff6e5;
+  border-radius: 10px;
+  padding: 1rem;
+  justify-content: space-between; 
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: left;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+.product img {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+  margin-left: 5px;
+  padding: 0.5;
+}
+
+.product h3 {
+  margin: 0.5rem 0;
+  font-size: 2.4rem;
+}
+
+.note {
+  grid-column: 2;
+  grid-row: span 2;
+  background: #f5d5a5;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.note h3 {
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+footer {
+  background: #5b4033;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Lancelot', serif;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  main.menuCont {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-highlight {
+    grid-template-columns: 1fr;
+  }
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 10px;
+  }
+}
